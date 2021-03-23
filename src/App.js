@@ -137,7 +137,7 @@ const Citys = [
 ]
 
 const authorize = [
-  { app_id: "a99f1b092c57476083484ae5c7822a40", app_key: "BZ4m0Wg-EzjesvW9ufoPSHibAMU" },
+  { app_id: "", app_key: "" },
 ]
 
 export default App;
