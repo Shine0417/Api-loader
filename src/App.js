@@ -85,6 +85,7 @@ class App extends Component {
       <Router>
         <div id="container">
           <BottomScrollListener onBottom={this.callback} />
+
           <ul className="dropdown">
             <span className="menu">選擇城市</span>
             <div className="dropdown-content">
@@ -94,27 +95,21 @@ class App extends Component {
               {this.props.citys.map(obj => (<li key={obj.id}><Link to={`/sceneSpot/${obj.city}`} onClick={() => this.reloadPage(obj.city)}>{obj.city}</Link></li>))}
             </div>
           </ul>
+
           <Switch>
             <Route exact path="/">
-              <Redirect to="/sceneSpot"/>
+              <Redirect to="/sceneSpot" />
             </Route>
             <Route exact path="/sceneSpot">
-              {(this.state.isLoading) ? <div className="loader"></div> :
-                <div>
-                  <h1>All sceneSpots</h1>
-                  <SceneContainer scenes={this.state.sceneSpots} />
-                </div>
-              }
+              <SceneContainer scenes={this.state.sceneSpots} isLoading={this.state.isLoading} />
             </Route>
             <Route path="/sceneSpot/:city">
-              {(this.state.isLoading) ? <div className="loader"></div> : <div><SceneContainer scenes={this.state.sceneSpots} /></div>}
+              <SceneContainer scenes={this.state.sceneSpots} isLoading={this.state.isLoading} />
             </Route>
           </Switch>
         </div >
       </Router >
-
     );
-
   }
 }
 
