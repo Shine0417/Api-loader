@@ -34,14 +34,14 @@ class App extends Component {
         // })
       }
     ).then(response => {
-      console.log(response);
+      // console.log(response);
       if (!response.ok) {
         throw Error("Err fetching scenes");
       }
       return response.json();
     })
       .then(alldata => {
-        console.log(alldata);
+        // console.log(alldata);
         var scenes = alldata.map(function (obj) {
           var scene = {
             name: obj.Name,
