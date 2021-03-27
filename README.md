@@ -1,7 +1,12 @@
 
 # 串接交通部觀光景點 API (MOTC Transport API V2) 練習作品
 
-## 啟動專案方法: `npm start`
+## 啟動專案方法:
+
+```sh
+npm install
+npm start  
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
