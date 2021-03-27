@@ -1,5 +1,5 @@
 {
-  "name": "fetch-photos",
+  "name": "Api-loader",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
