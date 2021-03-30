@@ -18,7 +18,5 @@ You will also see any lint errors in the console.
 
 - 由於是屬於練習用，故外觀上無調整，敬請見諒
 
-- 主要內容在App.js和SceneContainer.js裡
-
 - 這個專案是使用 `npm init react-app "folder name"` 建立的
 
